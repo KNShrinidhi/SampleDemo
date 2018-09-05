@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.wepgst.org</groupId>
+  <artifactId>wepgst_portal</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Selenium Maven Template</name>
+  <description>A Maven Template For Selenium</description>
+  <url>http://dev.wepgspservices.com/</url>
+  <properties>
+		<jdk.version>1.8</jdk.version>
+		<jre.version>1.8</jre.version>
+		<log4j.version>1.2.17</log4j.version>
+	</properties>
+  <dependencies>
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.13</version>
+  </dependency>
+  <dependency>
+		<groupId>com.sparkjava</groupId>
+		<artifactId>spark-core</artifactId>
+		<version>2.5</version>
+	</dependency>
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.11.0</version>
+</dependency>
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>3.11.0</version>
+</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-ie-driver</artifactId>
+    <version>3.11.0</version>
+</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-remote-driver</artifactId>
+    <version>3.11.0</version>
+</dependency>
+  
+<dependency>
+    <groupId>com.cedarsoft.commons</groupId>
+    <artifactId>mail</artifactId>
+    <version>6.0.0</version>
+</dependency>
+
+	<dependency>
+    	<groupId>org.apache.poi</groupId>
+    	<artifactId>poi-ooxml-schemas</artifactId>
+    	<version>3.17</version>
+	</dependency>
+<dependency>
+    <groupId>org.jxls</groupId>
+    <artifactId>jxls-poi</artifactId>
+    <version>1.0.13</version>
+</dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.8.1</version>
+</dependency>
+<dependency>
+    <groupId>com.monitorjbl</groupId>
+    <artifactId>xlsx-streamer</artifactId>
+    <version>0.2.3</version>
+</dependency>
+
+  <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.13.1</version>
+    <scope>test</scope>
+</dependency>
+
+
+  </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>javax.mail</groupId>
+  			<artifactId>mail</artifactId>
+  			<version>1.4.1</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+		</plugin>
+<!--		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${jre.version}</source>
+					<target>${jre.version}</target>
+				</configuration>
+		</plugin> -->
+	</plugins>
+  </build>
+</project>

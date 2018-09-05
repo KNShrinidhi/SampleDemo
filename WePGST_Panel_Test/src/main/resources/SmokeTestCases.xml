@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke_Testcases" verbose="1">
+  <test name="test">
+    <classes>
+      <class name="com.wep.wepasppanel.testcases.RegressionTestCases">
+       <methods>
+           <include name="Login" />
+           <include name="Import_Files" />
+    	   <include name="GSTR1_Save" />
+           <include name="GSTR1Download" />
+    	   <include name="logout" />
+    	</methods>
+      </class>
+    	
+   <!-- Upload information module Test cases 
+	    	 <include name="Import_Files" />
+    	   <include name="GSTR1_Save" />  -->
+           
+   <!-- Report Module Test cases 
+	       
+		   <exclude name="GSTIN_Purchase_Summary" />
+	       <exclude name="Sales_Summary_Invoice_Type" />
+	       <exclude name="Customer_Sales_Report" />
+	       <exclude name="Supplier_Inward_Register" /> 
+		   <exclude name="AuditReport" />
+		   <include name="LogReport" />
+   -->
+              
+   <!-- Nil Rated Test Cases      
+        	<include name="CreateNiLRatedInvoices" />
+            <include name="EditNiLRatedInvoices" />
+            <include name="DeleteNiLRatedInvoices" />
+   -->             
+   <!--  AT/TXP Invoices Test cases
+            <include name="CreateATDetails" />
+            <include name="EditATDetails" />
+            <include name="Delete_AT_TXP_Invoices" /> 
+    -->
+   <!--  Doc Issue Invoices Test cases
+   
+            <include name="CreateDocIssue" />
+            <include name="EditDocIssue" />
+            <include name="DeleteDocIssue" />
+   -->
+           
+      <!--  Supplier Management   
+           <include name="Supplier_Company_Details" />
+           <include name="EditSupplierDetails" />
+           <include name="DeleteSupplierDetails" />-->
+           
+     <!--   Customer Management  
+     		<include name="Customer_Company_Details" />
+            <include name="EditCustomerDetails" />
+            <include name="DeleteCustomerDetails" /> -->
+            
+            
+    <!--   User Module Test cases
+                   	
+     	  <include name="Role_Details" /> 
+     	  <include name="Delete_Role" /> 
+          <include name="User_Registration_Details" />
+	      <include name="Edit_User_Details" /> 
+	      <include name="Block_UnBlock_Users" />
+	      
+	--> 
+    <!--  PAN Module Test cases
+           <include name="Add_PAN_Details" /> 
+	       <include name="Edit_PAN_Details" />
+	       <include name="Delete_PAN_Details" />
+     -->   
+    <!-- Add GSTIN No Module Test cases
+       		<include name="Add_GSTN" />
+            <include name="Edit_GSTN" /> 
+	        <include name="Delete_GSTN" /> 
+    -->   
+           
+	<!-- HSN Module Test Cases
+	       <include name="HSN_Rate_Finder"/>
+	       <include name="HSN_Creation" />
+	       <include name="Delete_HSN_Details" />
+	-->  
+	    
+	<!-- Upload information module Test cases
+	    	<include name="Import_Files" /> 
+	-->   
+	     
+	 
+	       
+	     	
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+

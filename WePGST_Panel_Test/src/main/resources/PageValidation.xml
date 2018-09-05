@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PageValidation">
+  <test name="test">
+    <classes>
+      <class name="com.wep.wepasppanel.testcases.TestCase">
+       <methods>
+           <include name="Login" />
+           <include name="Add_PAN_Details" /> 
+	       <include name="Add_GSTN" />
+	        <include name="HSN_Rate_Finder"/>
+	       <include name="HSN_Creation" />
+	       <include name="Import_Files" /> 
+	       <include name="Customer_Company_Details" />
+	       <include name="Supplier_Company_Details" />
+	       <include name="Role_Details" /> 
+	       <include name="User_Registration_Details" />
+	       <include name="Edit_User_Details" />  
+	       <!--<include name="Reports_Sales_Summary" />
+	       <exclude name="Sales_Summary_Invoice_Type" />
+	       <exclude name="Customer_Sales_Report" />
+	       <exclude name="Supplier_Inward_Register" />   -->
+	       <include name="logout" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+

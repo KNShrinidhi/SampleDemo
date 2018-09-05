@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Full_Regression">
+  <test name="test">
+    <classes>
+      <class name="com.wep.wepasppanel.testcases.TestCase">
+       <methods>
+       	   <include name="Account_Registration"/>
+	       <include name="Login" />
+	       <include name="Add_PAN_Details" />
+	       <include name="Edit_PAN_Details" />
+	       <include name="Delete_PAN_Details" />
+	       <include name="Add_GSTN" />
+           <include name="Edit_GSTN" />
+	       <include name="Delete_GSTN" />
+	       <include name="HSN_Rate_Finder" />
+	       <include name="HSN_Creation" />
+	       <include name="Edit_HSN_Details" />
+	       <include name="Delete_HSN_Details" />
+	       <include name="Import_Files" />
+	       <include name="Customer_Company_Details" />
+	       <exclude name="Supplier_Company_Details" />
+	       <include name="Role_Details" />
+	       <include name="User_Registration_Details" />
+	       <include name="Edit_User_Details" />
+	       <include name="Delete_User_Details" />
+	       <include name="Edit_User_Page" />
+	       <!--  <include name="TRP_Registration_Page" />
+	       <include name="Edit_TRP_Registration_Page" />
+	       <include name="Delete_TRP_Registration_Page" /> -->
+	       <include name="Reports_Sales_Summary" />
+	       <include name="Sales_Summary_Invoice_Type" />
+	       <include name="Customer_Sales_Report" />
+	       <include name="Supplier_Inward_Register" />
+	       <include name="logout" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
